@@ -42,28 +42,28 @@ public class AddressBook {
 		contacts.add(contact);
 		System.out.println("Contact Added Successfully");
 	}
-//	// UC3 - Edit Contact
-//	public void editContact() {
-//
-//		System.out.print("Enter First Name to Edit: ");
-//		String name = sc.next();
-//
-//		for (Contact c : contacts) {
-//			if (c.getFirstName().equalsIgnoreCase(name)) {
-//
-//				System.out.print("Enter New Address: ");
-//				c.setAddress(sc.next());
-//
-//				System.out.print("Enter New Phone: ");
-//				c.setPhone(sc.next());
-//
-//				System.out.println("Contact Updated Successfully");
-//				return;
-//			}
-//		}
-//		System.out.println("Contact Not Found");
-//	}
-//
+	// UC3 - Edit Contact
+	public void editContact() {
+
+		System.out.print("Enter First Name to Edit: ");
+		String name = sc.next();
+
+		for (Contact c : contacts) {
+			if (c.getFirstName().equalsIgnoreCase(name)) {
+
+				System.out.print("Enter New Address: ");
+				c.setAddress(sc.next());
+
+				System.out.print("Enter New Phone: ");
+				c.setPhone(sc.next());
+
+				System.out.println("Contact Updated Successfully");
+				return;
+			}
+		}
+		System.out.println("Contact Not Found");
+	}
+
 //	// UC4 – Delete Contact
 //	public void deleteContact() {
 //		System.out.print("Enter First Name to Delete: ");
