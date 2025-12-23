@@ -1,7 +1,7 @@
 package com.bridgelabz.addressbook.service;
 
 import java.util.ArrayList;
-//import java.util.Iterator;
+import java.util.Iterator;
 import java.util.Scanner;
 import com.bridgelabz.addressbook.model.Contact;
 
@@ -64,22 +64,22 @@ public class AddressBook {
 		System.out.println("Contact Not Found");
 	}
 
-//	// UC4 – Delete Contact
-//	public void deleteContact() {
-//		System.out.print("Enter First Name to Delete: ");
-//		String name = sc.next();
-//
-//		Iterator<Contact> it = contacts.iterator();
-//		while (it.hasNext()) {
-//			if (it.next().getFirstName().equalsIgnoreCase(name)) {
-//				it.remove();
-//				System.out.println("Contact Deleted");
-//				return;
-//			}
-//		}
-//		System.out.println("Contact Not Found");
-//	}
-//
+	// UC4 – Delete Contact
+	public void deleteContact() {
+		System.out.print("Enter First Name to Delete: ");
+		String name = sc.next();
+
+		Iterator<Contact> it = contacts.iterator();
+		while (it.hasNext()) {
+			if (it.next().getFirstName().equalsIgnoreCase(name)) {
+				it.remove();
+				System.out.println("Contact Deleted");
+				return;
+			}
+		}
+		System.out.println("Contact Not Found");
+	}
+
 //	// UC5 – Display Multiple Contacts
 //	public void displayContacts() {
 //		if (contacts.isEmpty()) {
