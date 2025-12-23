@@ -80,14 +80,14 @@ public class AddressBook {
 		System.out.println("Contact Not Found");
 	}
 
-//	// UC5 – Display Multiple Contacts
-//	public void displayContacts() {
-//		if (contacts.isEmpty()) {
-//			System.out.println("No Contacts Available");
-//			return;
-//		}
-//		for (Contact c : contacts) {
-//			System.out.println(c);
-//		}
-//	}
+	// UC5 – Display Multiple Contacts
+	public void displayContacts() {
+		if (contacts.isEmpty()) {
+			System.out.println("No Contacts Available");
+			return;
+		}
+		for (Contact c : contacts) {
+			System.out.println(c);
+		}
+	}
 }
